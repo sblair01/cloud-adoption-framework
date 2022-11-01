@@ -30,7 +30,7 @@ The following list gives an overview of network design considerations for Azure 
 - **Manage access to Azure service tags:** Create an automated process to keep the firewall and proxy network rules updated according to the [Azure Arc network service tags and IP addresses range](https://www.microsoft.com/en-us/download/details.aspx?id=56519).
 - **Secure your network connectivity to Azure Arc:** Configure the machine to use Transport Layer Security (TLS) version 1.2. Older versions are not recommended due to known vulnerabilities.
 - **Define extensions connectivity method:** Azure extensions deployed on an Azure Arc-enabled server also need to communicate with other Azure services. This connectivity can go directly using public networks, through a firewall, or through a proxy server. To further secure the extension connectivity, you can [implement private endpoints](/azure/azure-arc/servers/private-link-security#how-it-works) for each extension.
-- **Review your overall connectivity architecture:** Review the [network topology and connectivity design area](/azure/cloud-adoption-framework/ready/enterprise-scale/network-topology-and-connectivity) of Azure landing zone enterprise-scale to assess the impact of Azure Arc-enabled servers on your overall connectivity.
+- **Review your overall connectivity architecture:** Review the [network topology and connectivity design area](../../../ready/enterprise-scale/network-topology-and-connectivity.md) of Azure landing zone enterprise-scale to assess the impact of Azure Arc-enabled servers on your overall connectivity.
 
 ## Design recommendations
 
@@ -93,4 +93,4 @@ For more guidance for your hybrid cloud adoption journey,  review the following 
 - Plan an [at-scale deployment](/azure/azure-arc/servers/plan-at-scale-deployment) of Azure Arc-enable servers.
 - Plan your [Private Link setup](/azure/azure-arc/servers/private-link-security#planning-your-private-link-setup).
 - For solving any connectivity issues, review the [troubleshooting Azure Arc-enabled servers agent connection guide](/azure/azure-arc/servers/troubleshoot-agent-onboard).
-- Learn more about Azure Arc via the [Azure Arc learning path](/learn/paths/manage-hybrid-infrastructure-with-azure-arc/).
+- Learn more about Azure Arc via the [Azure Arc learning path](/training/paths/manage-hybrid-infrastructure-with-azure-arc/).
